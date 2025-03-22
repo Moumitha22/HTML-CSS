@@ -59,3 +59,43 @@ body {
     text-align: center;
     padding: 0 15px;
 }
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1.2fr 1fr;
+    }  
+    
+    .grid-item  h4 {
+        font-size: 18px;
+    }
+
+    .grid-item  p {
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        width: 95%;
+    }  
+
+    .grid-item {
+        width: 90%;
+        max-width: 400px;
+        min-height: 250px;
+        margin: 0 auto;
+    }
+
+    .grid-item  h4 {
+        font-size: 18px;
+    }
+
+    .grid-item  p {
+        font-size: 14px;
+    }
+    
+} 
