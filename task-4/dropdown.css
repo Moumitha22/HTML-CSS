@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;    
+    background-image: url("./bg-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgb(23, 22, 22,0.6);
+    height: 100vh;
+}
+
+.navbar{
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+.nav-list .nav-link a{
+    color: rgb(18, 14, 97);
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+}
+
+.nav-list .nav-link:hover a{
+    color: white;
+    background-color: #7e60d8;
+}
+
+.nav-list .nav-link a i{
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.nav-list .nav-link:hover a i{
+   rotate: -180deg;
+}
+
+.nav-list .nav-link .dropdown-menu{
+   position: absolute;
+   display: block;
+   list-style: none;
+   padding-top: 10px;
+   height: 0;
+   overflow: hidden;
+   transition: 0.3s ease-in;
+}
+
+.nav-list .nav-link:hover .dropdown-menu{
+    height: calc(400% + 10px);
+}
+
+.nav-list .nav-link .dropdown-menu li a{
+    font-size: 18px;
+    display: none;
+}
+
+.nav-list .nav-link:hover .dropdown-menu li a{
+    display: block;
+    background-color: white;
+    color: #222;
+}
+
+.nav-list .nav-link:hover .dropdown-menu li:hover a{
+    color: #7e60d8;
+}
