@@ -3,31 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel - Manual</title> 
+    <title>Manual Carousel</title>
     <link rel="stylesheet" href="./manual-carousel.css">
 </head>
 <body>
     <div class="container">
         <div class="carousel">
-            <input type="radio" name="carousel" id="slide1" checked>
-            <input type="radio" name="carousel" id="slide2">
-            <input type="radio" name="carousel" id="slide3">
-            <input type="radio" name="carousel" id="slide4">
-            
-            <img src="./assets/image-8.jpg" class="slide" id="image1">
-            <img src="./assets/image-5.jpg" class="slide" id="image2">
-            <img src="./assets/image-10.jpg" class="slide" id="image3">
-            <img src="./assets/image-6.jpg" class="slide" id="image4">
-            
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+
+            <div class="slides">
+                <img src="./assets/image-8.jpg" class="slide" id="image1">
+                <img src="./assets/image-10.jpg"class="slide" id="image2">
+                <img src="./assets/image-5.jpg" class="slide" id="image3">
+                <img src="./assets/image-6.jpg" class="slide" id="image4">
+            </div>
+
             <div class="controls">
                 <label for="slide1"></label>
                 <label for="slide2"></label>
                 <label for="slide3"></label>
                 <label for="slide4"></label>
             </div>
+
+            <div class="arrows">
+                <label for="slide4" class="prev" id="prev1">&#10094;</label> 
+                <label for="slide2" class="next" id="next1">&#10095;</label>
+            
+                <label for="slide1" class="prev" id="prev2">&#10094;</label>
+                <label for="slide3" class="next" id="next2">&#10095;</label>
+            
+                <label for="slide2" class="prev" id="prev3">&#10094;</label>
+                <label for="slide4" class="next" id="next3">&#10095;</label>
+            
+                <label for="slide3" class="prev" id="prev4">&#10094;</label>
+                <label for="slide1" class="next" id="next4">&#10095;</label>
+            </div>
         </div>
-    </div>
-    
+    </div>    
 </body>
 </html>
-
