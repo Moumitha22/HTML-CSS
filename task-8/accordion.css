@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f4f4;
+}
+
+.accordion {
+    width: 350px;
+    background: white;
+    padding: 35px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.accordion .tab {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.accordion .tab:last-child {
+    margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.tab label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0,0.5);
+    transition: background-color 0.3s;
+}
+
+.tab label:hover {
+    background-color: #0056b3;
+}
+
+.tab label span{
+    font-size: 22px;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:checked + label span {
+    transform: rotate(-90deg);
+}
+
+.tab-content {
+    display: none;
+    background: #eeeeee;
+    border-radius: 5px;
+    text-align: center;
+    transition: padding 0.3s ease-in-out;
+}
+
+#tab1:checked ~ .tab-content,
+#tab2:checked ~ .tab-content,
+#tab3:checked ~ .tab-content,
+#tab4:checked ~ .tab-content{
+    padding: 15px;
+    display: block;
+}
